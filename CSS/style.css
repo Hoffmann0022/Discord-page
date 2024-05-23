@@ -1,0 +1,653 @@
+@import url('https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+/*Cabeçalho*/
+
+header{
+    grid-area: header;
+    background-color:#414eec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    width: 7rem;
+    margin: 15px 5vw;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+header button{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 15px 5vw;
+    transition: .3s ease-in-out;
+}
+
+header button:hover{
+    box-shadow: 0px 3px 10px #00000080;
+    color: #414eec;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+header i{
+    display: none;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-right:5vw;
+}
+
+/*main*/
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column; 
+}
+
+/*primary*/
+
+.primary{
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../IMG/fundo-section-01.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.center{
+    width: 65%;
+}
+
+.center h1{
+    text-transform: uppercase;
+    font-family: 'ABC Ginto Nord Unlicensed Trial';
+    font-size: calc(2rem + 2vw);
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.center p{
+    font-size: calc(0.7rem + 0.5vw);
+    margin: 0px 30px;
+    color: #fff;
+}
+
+.buttons{
+    margin-top: 30px;
+}
+
+.white{
+    padding: 15px 20px ;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: calc(1rem + 0.2vw);
+    font-weight: 500;
+    color:  rgb(35, 39, 42);
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.white i{
+    margin-right: 10px;
+}
+
+.black{
+    padding: 15px 20px ;
+    background-color: rgb(35, 39, 42);
+    border: none;
+    border-radius: 50px;
+    font-size: calc(1rem + 0.2vw);
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.white:hover{
+    box-shadow: 0px 3px 10px #00000080;
+    color: #414eec;
+}
+
+.black:hover{
+    box-shadow: 0px 3px 10px #00000080;
+    background-color:rgb(47, 52, 56) ;
+}
+
+/*crie*/
+
+.crie{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "img text";
+    align-items: center;
+    height:100vh ;
+    color:  rgb(35, 39, 42);
+}
+
+.crie img{
+    grid-area: img;
+    max-width: 85%;
+    margin: auto;
+}
+.crie .text{
+    grid-area: text;
+    width: 50%;
+    margin: auto;
+}
+
+.crie h2{
+    font-size: calc(2rem + 1vw);
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.crie p{
+    font-size: calc(0.7rem + 0.5vw);
+}
+
+
+/*encontrar*/
+
+.encontrar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "text img";
+    align-items: center;
+    height:100vh ;
+    color:  rgb(35, 39, 42);
+    background-color: rgb(246, 246, 246);
+}
+
+.encontrar img{
+    grid-area: img;
+    max-width: 85%;
+    margin: auto;
+}
+.encontrar .text{
+    grid-area: text;
+    width: 50%;
+    margin: auto;
+}
+
+.encontrar h2{
+    font-size: calc(2rem + 1vw);
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.encontrar p{
+    font-size: calc(0.7rem + 0.5vw);
+}
+
+/*poucos*/
+
+.poucos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "img text";
+    align-items: center;
+    height:100vh ;
+    color:  rgb(35, 39, 42);
+}
+
+.poucos img{
+    grid-area: img;
+    max-width: 85%;
+    margin: auto;
+}
+.poucos .text{
+    grid-area: text;
+    width: 50%;
+    margin: auto;
+}
+
+.poucos h2{
+    font-size: calc(2rem + 1vw);
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.poucos p{
+    font-size: calc(0.7rem + 0.5vw);
+}
+
+/*confiavel*/
+
+.confiavel{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height:auto;
+    color:  rgb(35, 39, 42);
+    background-color: rgb(246, 246, 246);
+}
+
+.confiavel img{
+    width: 90%;
+    margin: auto;
+}
+.confiavel .text{
+    grid-area: text;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.confiavel h2{
+    font-size: calc(1.6rem + 1vw);
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 130px;
+    font-family: 'ABC Ginto Nord Unlicensed Trial';
+}
+
+.confiavel h3{
+    font-size: calc(1.3rem + 1vw);
+    margin-bottom: 20px;
+    margin-top: 90px;
+}
+
+.confiavel p{
+    font-size: calc(0.7rem + 0.5vw);
+    margin: 0px 15%;
+}
+
+.download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    width: 90vw;
+    background-image: url(../IMG/stars.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+
+.download button{
+    padding: 15px 20px ;
+    background-color: #414eec;
+    border: none;
+    border-radius: 50px;
+    font-size: calc(1rem + 0.2vw);
+    font-weight: 500;
+    color:  #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.download button i{
+    margin-right: 10px;
+}
+
+.download button:hover{
+    box-shadow: 0px 3px 10px #00000080;
+}
+
+
+/*footer*/
+
+footer{
+    grid-area: footer;
+    background-color:  rgb(35, 39, 42);
+    padding-top: 90px;
+    color: #fff;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 60%;
+}
+
+.footer div{
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.social-cont{
+    margin-left: 70px;
+    margin-right: 100px;
+    margin-bottom: 70px;
+}
+
+.language{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.language img{
+    width: 27px;
+    border-radius: 5px;
+}
+
+.language p{
+    margin: 0px 10px;
+}
+
+.language i{
+    font-size: 0.7rem;
+}
+
+
+.social{
+    font-size: 1.3rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.social i{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.footer h3{
+    color: #414eec;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    margin-bottom: 15px;
+}
+
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+}
+
+.ultimo{
+    margin-right: 100px;
+}
+
+footer hr{
+   width: 90%;
+   margin: auto;
+   border: none;
+   height: 1px;
+   background-color: #414eec;
+}
+
+.last{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto 50px auto;
+}
+
+.last img{
+    width: calc(3rem + 5.6vw);
+    cursor: pointer;
+}
+
+.last button{
+    padding: 10px 15px ;
+    background-color: #414eec;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color:  #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.last button:hover{
+    background-color: #616df0;
+}
+
+
+/*Responsividade*/
+
+@media only screen and (max-width: 1040px){
+    header nav{
+        display: none;
+    }
+
+    header i{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 895px){
+    .black{
+        display: none;
+    }
+
+    .crie{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        height: auto;
+    }
+
+    .crie img{
+        max-width: 75%;
+        margin-top: 50px;
+    }
+
+    .crie .text{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .crie h2{
+        font-size: 2rem;
+    }
+
+    .encontrar{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        height: auto;
+    }
+
+    .encontrar img{
+        max-width: 75%;
+        margin-top: 50px;
+    }
+
+    .encontrar .text{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .encontrar h2{
+        font-size: 2rem;
+    }
+
+    .poucos{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        height: auto;
+    }
+
+    .poucos img{
+        max-width: 75%;
+        margin-top: 50px;
+    }
+
+    .poucos .text{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .poucos h2{
+        font-size: 2rem;
+    }
+
+    .confiavel h2{
+        margin-top: 90px;
+    }
+
+    .center{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 721px){
+    .conteiner{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .center{
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 566px){
+    .crie h2{
+        font-size: calc(1rem + 1vw);
+        line-height: normal;
+    }
+
+    .crie p{
+        font-size: 0.7rem;
+    }
+
+    .encontrar h2{
+        font-size: calc(1rem + 1vw);
+        line-height: normal;
+    }
+
+    .encontrar p{
+        font-size: 0.7rem;
+    }
+
+    .poucos h2{
+        font-size: calc(1rem + 1vw);
+        line-height: normal;
+    }
+
+    .poucos p{
+        font-size: 0.7rem;
+    }
+
+    .confiavel h2{
+        font-size: calc(1rem + 1vw);
+        line-height: normal;
+    }
+
+    .confiavel p{
+        font-size: 0.7rem;
+    }
+
+    .confiavel h2{
+        margin-top: 50px;
+    }
+
+    .confiavel h3{
+        font-size: calc(1rem + 1vw);;
+    }
+
+    ul li a{
+        font-size: 0.7rem;
+    }
+
+    .footer{
+        gap: 10px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 395px){
+    .center h1{
+        font-size: calc(1.5rem + 1vw);
+        margin-bottom: 20px;
+    }
+
+    .footer{
+        gap: 0px;
+        width: 100%;
+    }
+
+    header button{
+        display: none;
+    }
+    
+}
